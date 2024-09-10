@@ -1,12 +1,12 @@
-# B1: Chạy file setup.sh để tạo key xác thực
+### B1: Chạy file setup.sh để tạo key xác thực
 `bash setup.sh`
-# B2: Chạy các container:
+### B2: Chạy các container
 `docker compose up -d`
-# B3: Truy cập vào bash shell container mongo1
+### B3: Truy cập vào bash shell container mongo1
 `docker exec -it mongo1 bash`
-# B4: Trên bash shell mongo1 chạy lệnh sau để truy cập vào mongo shell
+### B4: Trên bash shell mongo1 chạy lệnh sau để truy cập vào mongo shell
 `mongosh -u root -p phuonglv`
-# B5: Khởi tạo Replica.
+### B5: Khởi tạo Replica
  `rs.initiate(
   {
     _id: "rs0",
@@ -18,5 +18,5 @@
     ]
   }
 )`
-# B6: Kiểm tra replica
+### B6: Kiểm tra replica
 `rs.status()`
